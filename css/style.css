@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+ul{
+   display: inline-block;
+   
+}
+
+section#sobre-o-esporte{
+    margin: auto;
+    margin-top: 300px;
+    width: 100%;
+    background-color: rgb(102, 0, 0);
+}
+
