@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>betoneira boxe c.f</title>
-    <link rel="stylesheet" type="text/css" href="/Site-boxing/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
   
         
 </head>
@@ -27,7 +27,8 @@
                 <p class="noticias">História do boxe</p>
                 <a href="">
                     <figure>
-                    <img src="/Site-boxing/Meu-site/imagens/boxingRED.png" alt="">
+                    <img src="/Meu-site/imagens/boxingRED.png" alt=""
+                    width="300px">
                     </figure>
                 </a>
             </li>
@@ -39,7 +40,7 @@
             <p class="noticias">Golpes, esquivas e defesas</p>
             <a href="">
                 <figure>
-                <img src="/Site-boxing/Meu-site/imagens/boxingBLUE2.png" alt="">
+                <img src="/Meu-site/imagens/boxingBLUE2.png" alt=""width="300px">
                 </figure>
             </a>
         </li>
@@ -51,7 +52,7 @@
             <p class="noticias">Em alta no Boxe</p>
             <a href="">
                 <figure>
-                <img src="/Site-boxing/Meu-site/imagens/boxingPURPLE.png" alt="">
+                <img src="/Meu-site/imagens/boxingPURPLE.png" alt=""width="300px">
                 </figure>
             </a>
         </ul>
@@ -62,7 +63,7 @@
             <p class="noticias">Saúde e alimentação</p>
             <a href="">
                 <figure>
-                <img src="/Site-boxing/Meu-site/imagens/boxingGREEN.png" alt="">
+                <img src="/Meu-site/imagens/boxingGREEN.png" alt=""width="300px">
                 </figure>
             </a>
         </ul>
@@ -78,34 +79,33 @@
             <ul id="informa">
                 <li id="titulo"> <img src="/Meu-site/imagens/paper-planes-1081560_1280.png" width="30px" alt="">   Faça sua inscrição</li>
                 
-                <li class="inscr1" ><input type="email" name="inscr1" placeholder="Digite seu email:"></li>
+                <li class="inscr1" ><input type="text" name="inscr1" placeholder="Digite seu email:"></li>
                 
                 <li class="inscr2"><input type="tel" name="inscr2" placeholder="Digite seu Whatsapp:"></li>
                 <li id="botao">
                 <input  type="submit" name="envio" value="Enviar" onclick="enviar()">
-                <div id="resultado"></div>
                </li>
             </ul>
+            <div id="res"></div>
      
  
  
     </main>
 </form>
                 <script>
-                      function enviar(){
-                        var ema = window.document.getElementsByName('inscr1').value;
-                      
-                        var tel = window.document.getElementsByName('insc2').value;
+                      function enviar() {
+                        var email = window.document.getElementsByName('inscr1').value;
+                        var wah = window.document.getElementsByName('inscr2').value;
                         
-                        var resultado = window.document.getElementById('resultado')
+                        if(email == 'nome' && wah == 'nome'){
+                           window.alert('Enviaremos um email confirmando sua aula experimental!');
+                        }
 
-                        var emaresult = String(ema.value)
-                        var telresult = Number(tel.value)
-                        
-                        
-
-                        resultado.innerHTML = `O número de telefone do usuario é ${emaresult} e o email é ${telresult}`
+                        else{
+                            window.alert('erroooo');
+                        }
                       }
+                     
                 </script>
 </body>
 </html>

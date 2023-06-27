@@ -50,12 +50,12 @@ section#sobre-o-esporte{
     border: 5px solid #085f85;
 }
 figure {
-   width:190%;
+   width:95%;
    display:flex;
    justify-content: center;
 }
 .noticias{
-    width: 120%;
+    width: 90%;
     text-align: right;
     color: #1AACEB;
     font-size: 25px;
@@ -63,7 +63,7 @@ figure {
 }
 ul.academia li{
     display: inline-block;
-    width: 600px;
+
     margin: 0% auto ;
 }
 
@@ -129,4 +129,12 @@ li#botao input{
 }
 li#botao input:hover {
     opacity: 80%;
+}
+div#res{
+    background-color: #ffffff;
+    width: 250px;
+    height: 90px;
+    margin-left: 725px;
+    margin-top: -50px;
+    border: 3px solid #1AACEB ;
 }
